@@ -1,0 +1,129 @@
+\documentclass[12pt, letterpaper, oneside]{book}
+\usepackage{amsmath}
+\usepackage[skip=6pt]{parskip}
+\begin{document}
+\chapter{Algebra Preliminaries}
+\section{Integer Exponents}
+To begin, only looking at positive integers, the definition of exponentiation is below.
+\begin{equation}
+    a^n = \underbrace{ a \cdot a \cdot  a\cdots a}_\textrm{n times}, \quad \text{where } n > 0
+\end{equation}
+
+For example, $ 3^3 = 3 \cdot 3 \cdot 3 \cdot 3 = 27 $
+
+One idea to note is the importance of parenthesis. If no parenthesis is present around the base, then it is the same as multiplying by -1.
+\[-2^4 \neq (-2)^4 \]
+\[(-2)^4 = -2 \cdot -2 \cdot -2 \cdot -2 = 16\] 
+\[-2^4 = -1 \cdot (2^4) = -1 \cdot (2 \cdot 2 \cdot 2 \cdot 2) = -16\]
+From here you can see that when the exponent is an odd number the result is always a negative number.
+
+One identity of exponents is the idea of 0 being the exponent.
+\begin{equation}
+    a^0 = 1, \quad \text{where } a \neq 0
+\end{equation}
+It does not matter if a is positive or negative, the result is always 1.
+
+Now lets look at the last case for integers, where they are negative.
+\begin{equation}
+    a^{-n} = \frac{1}{a^n}
+\end{equation}
+For example, $(-4)^{-3} = -\frac{1}{4} \cdot -\frac{1}{4} \cdot -\frac{1}{4} = -\frac{1}{64}$
+
+Moving forward there are a lot of properties of exponents that need to be covered. These properties only apply when the base is the same for all cases.
+\begin{equation}
+    a^n a^m = a^{n + m}
+\end{equation}
+\begin{equation}
+    (a^n)^m = a^{n \cdot m}
+\end{equation}
+\begin{equation}
+    \frac{a^n}{a^m} = a^{n - m} = \frac{1}{a^{n-m}} \quad \text{where } a \neq 0
+\end{equation}
+\begin{equation}
+    \frac{1}{a^{-n}} = a^n
+\end{equation}
+These next properties apply to problems where the base of the exponents are different
+\begin{equation}
+    (ab)^n = a^n b^n
+\end{equation}
+\begin{equation}
+    \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \quad \text{where } b \neq 0
+\end{equation}
+\begin{equation}
+    \left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n = \frac{b^n}{a^n} 
+\end{equation}
+\begin{equation}
+    (ab)^{-n} = \frac{1}{(ab)^n} 
+\end{equation}
+\begin{equation}
+    \frac{a^{-n}}{b^{-m}} = \frac{b^m}{a^n} 
+\end{equation}
+\begin{equation}
+    (a^nb^m)^k = a^{nk}b^{mk} 
+\end{equation}
+\begin{equation}
+    \left(\frac{a^n}{b^m}\right)^k = \frac{a^{nk}}{b^{mk}}
+\end{equation}
+
+\subsection{Practice Problem 1}
+Simplify the following:
+\[ (-10z^2y^{-4})^2(z^3y)^{-5} \]
+Bring in overarching exponents
+\[ (-100z^4y^{-8})(z^{-15}y{-5}) \]
+Write as a fraction, brining negative exponents to denominator
+\[ \frac{-100z^4}{y^8y^5z^{15}} \]
+Add / Subtract exponents
+\[ \frac{-100}{y^{13}z^{11}} \]
+
+
+
+\subsection{Practice Problem 2}
+Simplify the following:
+\[ \left(\frac{24a^3b^{-8}}{6a^{-5}b}\right)^{-2} \]
+First simplify everything within the parenthesis. Bring the larger negative exponents to the top / bottom
+\[ \left(\frac{4a^3a^5}{bb^8}\right)^{-2} \]
+Simplify by adding exponents
+\[ \left(\frac{4a^8}{b^9}\right)^{-2} \]
+Make overarching exponent positive
+\[ \left(\frac{b^9}{4a^8}\right)^{2} \]
+Bring in overarching exponent to numerator and denominator
+\[ \frac{b^{18}}{16a^{16}} \]
+
+\section{Rational Exponents}
+Now we are going to deal with exponents that are not just integers. An example of a rational exponent is
+\[b^{\frac{m}{n}}\]
+Starting with a simple case where $m = 1$
+\[a = b^{\frac{1}{n}} \rightarrow a^n = b\]
+This is called the n-th root of $b$. You've probably seen the exponent $a^{\frac{1}{2}}$, which is the same as $\sqrt{a}$ . A way of looking at these exponents is what base can I raise the inverse of the fraction in order to get the same base from the original problem.
+
+For example:
+\[81^{\frac{1}{4}}\]
+Simplify to lamens terms.
+\[?^{4} = 81\]
+Solve
+\[3^4 = 81 \rightarrow 81^{\frac{1}{4}} = 3\]
+
+Going to more complicated situations where $m > 1$ .
+It is important to know that all the same properties from the section before still apply and will come in handy.
+
+For example:
+\[8^{\frac{2}{3}}\]
+Bring out the squared numerator. Remember the equation in $(a^n)^m = a^{n \cdot m}$, but in reverse
+\[ 8^{\frac{2}{3}} = \left( 8^{\frac{1}{3}} \right)^2 \]
+Solve the inner parenthesis
+\[ 8^{\frac{1}{3}} \rightarrow ?^3 = 8 \rightarrow 2^3 = 8\]
+\[ 8^{\frac{1}{3}} = 2\]
+Bring back into original problem
+\[\left( 8^{\frac{1}{3}} \right)^2 = 2^2 = 4\]
+
+\subsection{Practice Problem 1}
+Solve:
+\[\left( \frac{w^{-2}}{16v^{\frac{1}{2}}} \right) ^ {\frac{1}{4}}\]
+Move negative exponents
+\[\left( \frac{1}{16w^{2}v^{\frac{1}{2}}} \right) ^ {\frac{1}{4}}\]
+Distribute overarching exponent
+\[\frac{1}{2w^{\frac{1}{2}}v^{\frac{1}{8}}}\]
+
+
+
+\end{document}
