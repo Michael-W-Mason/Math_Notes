@@ -3,6 +3,11 @@
 \usepackage[skip=6pt]{parskip}
 \begin{document}
 \chapter{Algebra Preliminaries}
+\section*{Credit}
+This entire chapter with almost all of the examples comes from Paul's Online Math Notes found here:
+
+https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx
+
 \section{Integer Exponents}
 To begin, only looking at positive integers, the definition of exponentiation is below.
 \begin{equation}
@@ -124,6 +129,109 @@ Move negative exponents
 Distribute overarching exponent
 \[\frac{1}{2w^{\frac{1}{2}}v^{\frac{1}{8}}}\]
 
+\section{Radicals}
+A radical is defined as below:
+\begin{equation}
+    \sqrt[n]{a} = a^{\frac{1}{n}} \quad \text{where } n > 0
+\end{equation}
+Also as a note $n$ also has to be an integer. As you can see this is no different than the Integer Exponents section, and all the same rules apply.
+
+One note is the square root where
+\[ \sqrt[2]{a} = \sqrt{a} \]
+
+One common mistake is that the exponent is distrubuted amongst all bases. That case is only true if the base is also grouped with the exopnent. Shown below is an example.
+\[8x^{\frac{1}{10}} =8\sqrt[10]{x} \neq \sqrt[10]{8x} \]
+
+Another very important rule is neative bases. We know that $\sqrt{16} = 4$. However, $(-4)^2 = 16$.
+
+In addition to this section is the general rational exponent notation, which is as follows:
+\begin{equation}
+    a^{\frac{m}{n}} = (a^m)^{\frac{1}{n}} = \sqrt[n]{a^m}
+\end{equation}
+
+With the general notation there are also a few rules. These rules apply where $n$ is a positive integer, $n >1$, and $a$ and $b$ are positive real numbers.
+\begin{equation}
+    \sqrt[n]{a^n} = a
+\end{equation}
+\begin{equation}
+    \sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}
+\end{equation}
+\begin{equation}
+    \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}
+\end{equation}
+
+A very common mistake is with addition and subtraction of radicals. The following cannot be done on radicals.
+\[\sqrt[n]{a \pm b} \neq \sqrt[n]{a} \pm \sqrt[n]{b} \]
+
+\subsection{Practice Problem 1}
+Write in the exponent form and solve:
+\[ \sqrt[4]{16} \]
+Solution:
+\[ \sqrt[4]{16} = 16^{\frac{1}{4}} \]
+\[?^4 = 16\]
+\[2^4 = 16\]
+\[ \sqrt[4]{16} = 2 \]
+
+\subsection{Practice Problem 2}
+Simplify the following:
+\[\sqrt[4]{32 x^9 y^5 z^{12}}\]
+Make all multiples of 4
+\[ \sqrt[4]{16 x^8 y^4 z^{12} (2xy)} \]
+Bring out multiples of 4
+\[ \sqrt[4]{16} \cdot \sqrt[4]{(x^2)^4} \cdot \sqrt[4]{y^4} \cdot \sqrt[4]{z^{12}} \cdot \sqrt[4]{2xy}\]
+Simplify
+\[2x^2yz^3\sqrt[4]{2xy}\]
+
+\section{Polynomials}
+Polynomials are algebraic expressions in the form of $ax^n$ where the following criteria are true: $n$ is a non-negative integer, $a$ is a real number and is called the coefficient. The degree of a polynomial is the highest exponent within the polynomial.
+
+Below are some examples of polynomials and their degrees.
+\[2x^7 + 3x^3 + 2 \quad \text{degree: 7}\]
+\[x^2 + 14x - 21 \quad \text{degree: 2}\]
+\[4 \quad \text{degree: 0}\]
+
+From the rules above the following would not meet the criteria of a polynomial
+\[4x^6 + 15x^{-8} + 1\]
+\[5\sqrt{x} - x + x^2\]
+The first one is not a polynomial because it has a negative exponent. The second one is not a polynomial because you cannot factor out the radical. Note that only the exponent cannot be a radical, but the coefficient / base can be one.
+
+Up to this point we have been dealing with polynomials of one variable. Polynomials of two variables come in the form $ax^ny^m$. The degree is now the sum of the exponents, $n+m$. So for example:
+\[x^2y - 6x^3y^{12}+10x^2-7y+1 \quad \text{degree 15} \]
+In reality there can be any number of terms for polynomials. A monomial refers to one variable, a biomial refers to two, and a trinomal refers to three.
+
+Back to polynomials, we need to discuss adding and subtracting polynomials. The distrubitve law will come in handy
+\begin{equation}
+    a(b+c) = ab + ac
+\end{equation}
+One repeated pattern that comes out of this law is:
+\begin{equation}
+    (a+b)(a-b) = a^2 + b^2
+\end{equation}
+\begin{equation}
+    (a+b)^2=a^2+2ab+b^2
+\end{equation}
+\begin{equation}
+    (a-b)^2=a^2-2ab+b^2
+\end{equation}
+\subsection{Practice Problem 1}
+Add $6x^5 - 10x^2 + x - 45$ to $13x^2 - 9x + 4$
+
+Combine like terms:
+\[6x^5 + (-10 + 13)x^2 + (-9 + 1)x + (-45 + 4)\]
+Simplify:
+\[6x^5 + 3x^2 -8x - 41\]
+
+\subsection{Practice Problem 2}
+Multiply the following:
+\[(3x + 7y)(x-2y)\]
+Multiply out the $3x$:
+\[3x(x-2y) \rightarrow 3x^2 - 6xy \]
+Multiply out the $7y$:
+\[7y(x-2y) \rightarrow 7xy-14y^2 \]
+Combine:
+\[3x^2 - 6xy + 7xy-14y^2\]
+Simplify:
+\[3x^2 + xy - 14y^2\]
 
 
 \end{document}
